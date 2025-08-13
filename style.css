@@ -30,14 +30,13 @@ body {
 }
 
 /* --- Animated Background Elements --- */
-/* NEW: Styles for the Matrix Canvas */
 #matrix-canvas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Sits behind everything else */
+    z-index: 1;
 }
 
 .background-glow {
@@ -59,8 +58,8 @@ body {
     left: 0;
     width: 100%;
     height: var(--header-height);
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 0 30px;
     background: rgba(0, 0, 0, 0.8);
@@ -69,10 +68,8 @@ body {
     z-index: 10;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--primary-color);
+#main-nav {
+    grid-column: 2 / 3;
 }
 
 #main-nav a {
@@ -86,6 +83,11 @@ body {
 #main-nav a:hover {
     color: var(--primary-color);
     text-shadow: 0 0 8px var(--glow-color);
+}
+
+.lang-switcher {
+    grid-column: 3 / 4;
+    justify-self: end;
 }
 
 .lang-switcher button {
@@ -121,7 +123,7 @@ body {
     margin: 0 auto;
     padding: 100px 20px;
     border-bottom: 1px solid var(--border-color);
-    background-color: var(--panel-bg-color); /* Added background to panels */
+    background-color: var(--panel-bg-color);
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -148,7 +150,7 @@ body {
     align-items: center;
     text-align: center;
     border-bottom: none;
-    background-color: transparent; /* Hero panel should be see-through */
+    background-color: transparent;
 }
 
 #hero h1 {
@@ -312,32 +314,119 @@ body {
 @keyframes glitch-anim-2 { 0% { clip-path: inset(10% 0 86% 0); } 100% { clip-path: inset(90% 0 1% 0); } }
 
 /* --- RTL Styles --- */
-[dir="rtl"] #main-nav { order: 1; }
-[dir="rtl"] .logo { order: 2; }
-[dir="rtl"] .lang-switcher { order: 3; }
+[dir="rtl"] #main-header {
+    grid-template-columns: 1fr auto 1fr;
+}
+[dir="rtl"] #main-nav { 
+    grid-column: 2 / 3;
+}
+[dir="rtl"] .lang-switcher {
+    grid-column: 1 / 2;
+    justify-self: start;
+}
+[dir="rtl"] .lang-switcher button {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
 [dir="rtl"] .timeline { border-left: none; border-right: 2px solid var(--border-color); padding: 0 40px 0 20px; }
 [dir="rtl"] .timeline-item::before { left: auto; right: -49px; }
 [dir="rtl"] .timeline-item ul { padding-left: 0; padding-right: 20px; list-style-type: '« '; }
 [dir="rtl"] .skill-info { flex-direction: row-reverse; }
 
-
-/* --- Responsive Design --- */
+/* --- Responsive Design (Improved for Mobile) --- */
 @media (max-width: 768px) {
+    /* Header adjustments */
     #main-header {
-        padding: 0 15px;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
         height: auto;
-    }
-    #main-nav {
-        order: 3;
-        width: 100%;
-        justify-content: center;
+        gap: 8px;
         display: flex;
-        padding: 10px 0;
     }
-    #main-nav a { margin: 0 10px; }
-    .logo { order: 1; }
-    .lang-switcher { order: 2; }
-    #content-container { padding-top: 110px; }
-    .skills-grid { grid-template-columns: 1fr; }
+
+    /* Navigation */
+    #main-nav {
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    #main-nav a {
+        font-size: 16px;
+        margin: 0;
+        padding: 8px 12px;
+    }
+
+    /* Language switcher */
+    .lang-switcher {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+    .lang-switcher button {
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+
+    /* Content container */
+    #content-container {
+        padding-top: 140px;
+    }
+
+    /* Panels */
+    .panel {
+        padding: 60px 15px;
+    }
+    .panel-title {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    /* Hero section */
+    #hero {
+        padding: 0 10px;
+    }
+    #hero h1 {
+        font-size: clamp(1.8rem, 8vw, 3.2rem);
+    }
+    #hero h2 {
+        font-size: clamp(1rem, 4vw, 1.4rem);
+        min-height: 30px;
+    }
+    .scroll-down-btn {
+        bottom: 20px;
+        font-size: 10px;
+    }
+
+    /* Skills grid */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .skill-info {
+        font-size: 13px;
+    }
+
+    /* Timeline */
+    .timeline {
+        padding: 0 15px;
+    }
+    .timeline-item h4 {
+        font-size: 1rem;
+    }
+    .timeline-item p {
+        font-size: 0.9rem;
+    }
+
+    /* Contact links */
+    .contact-links a {
+        display: block;
+        width: 100%;
+        padding: 14px 0;
+        font-size: 1rem;
+    }
 }
