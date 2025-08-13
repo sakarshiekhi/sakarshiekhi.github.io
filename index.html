@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Language and direction will be set by JavaScript -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakar Sheikhi // Software Developer</title>
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NEW: Canvas for the Matrix background effect -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- STATIC BACKGROUND GLOW -->
+    <div class="background-glow"></div>
+
+    <!-- HEADER & NAVIGATION -->
+    <header id="main-header">
+        <nav id="main-nav">
+            <a href="#about" data-key="nav_about">// ABOUT</a>
+            <a href="#skills" data-key="nav_skills">// SKILLS</a>
+            <a href="#experience" data-key="nav_experience">// EXPERIENCE</a>
+            <a href="#contact" data-key="nav_contact">// CONTACT</a>
+        </nav>
+        <div class="lang-switcher">
+            <button data-lang="fa">FA</button>
+            <button data-lang="de">DE</button>
+            <button data-lang="en" class="active">EN</button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main id="content-container">
+
+        <!-- SECTION 1: HERO / INTRO -->
+        <section id="hero" class="panel">
+            <h1 class="glitch" data-text="SAKAR SHEIKHI">SAKAR SHEIKHI</h1>
+            <h2><span id="typed-title"></span></h2>
+            <a href="#about" class="scroll-down-btn" data-key="hero_scroll">SCROLL TO EXPLORE</a>
+        </section>
+
+        <!-- SECTION 2: ABOUT -->
+        <section id="about" class="panel">
+            <h3 class="panel-title" data-key="section_title_about">[ ABOUT ME ]</h3>
+            <p class="summary" data-key="hero_summary">
+                Software developer focusing on mobile applications (Flutter) and web. Passionate about solving technical challenges and learning new technologies to build efficient and user-friendly products.
+            </p>
+        </section>
+
+        <!-- SECTION 3: SKILLS -->
+        <section id="skills" class="panel">
+            <h3 class="panel-title" data-key="section_title_skills">[ TECHNICAL TOOLBOX ]</h3>
+            <div class="skills-grid">
+                <!-- Skills will be dynamically generated here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- SECTION 4: EXPERIENCE -->
+        <section id="experience" class="panel">
+            <h3 class="panel-title" data-key="section_title_experience">[ PROFESSIONAL TRAJECTORY ]</h3>
+            <div class="timeline">
+                <!-- Experience items will be dynamically generated here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- SECTION 5: CONTACT -->
+        <section id="contact" class="panel">
+            <h3 class="panel-title" data-key="section_title_contact">[ GET IN TOUCH ]</h3>
+            <p data-key="contact_intro">I'm currently open to new opportunities. Feel free to reach out.</p>
+            <div class="contact-links">
+                <a href="mailto:qepzoe@gmail.com" class="contact-link" data-key="contact_email">EMAIL</a>
+                <a href="https://github.com/sakarshiekhi" target="_blank" class="contact-link">GITHUB</a>
+                <a href="https://www.instagram.com/sakarsheikhi" target="_blank" class="contact-link">INSTAGRAM</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JAVASCRIPT LIBRARIES -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- YOUR SCRIPT FILE -->
+    <script src="script.js"></script>
+
+</body>
+</html>
