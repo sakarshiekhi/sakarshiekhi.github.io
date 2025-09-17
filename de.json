@@ -1,31 +1,114 @@
 {
-  "loader_text": "Sichere Verbindung wird hergestellt...",
-  "hud_status_label": "SYSTEMSTATUS",
-  "hero_name": "Sakar Sheikhi",
-  "hero_summary": "Softwareentwickler mit Fokus auf mobile Anwendungen (Flutter) und Web. Begeistert von der Lösung technischer Herausforderungen und dem Erlernen neuer Technologien, um effiziente und benutzerfreundliche Produkte zu entwickeln.",
-  "typed_title_1": "Mobile App Entwickler (Flutter)",
-  "typed_title_2": "Vertraut mit Netzwerk- und Linux-Konzepten",
-  "typed_title_3": "kreative Problemlösung",
-  "section_title_experience": "[ Beruflicher Werdegang ]",
-  "exp1_title": "Bachelor in Informatik",
-  "exp1_location": "Islamische Azad-Universität Täbris (2020- 2025)",
-  "exp2_title": "WordPress-Entwickler und Website-Administrator",
-  "exp2_location": "Ario Barzan Fara Gostar Co.",
-  "exp2_desc1": "Vollständige Entwicklung der Unternehmenswebsite (abarzan.com) mit WordPress innerhalb von zwei Wochen.",
-  "exp2_desc2": "Verantwortlich für Content-Management, Plugin-Updates und Website-Wartung.",
-  "exp3_title": "Praktikant im technischen Support (Help Desk)",
-  "exp3_location": "Polynar Co. (2023)",
-  "exp3_desc1": "Erlernen der Prozesse eines professionellen Netzwerk- und Support-Teams.",
-  "exp3_desc2": "Computer-Montage, Software-Installation und System-Fehlerbehebung.",
-  "exp3_desc3": "Kennenlernen verschiedener Netzwerkkabel und technischer Support für Benutzer.",
-  "exp4_title": "Praktikant im Grafikdesign",
-  "exp4_location": "Pazineh Studio (2018)",
-  "exp4_desc1": "Erstellung von Grafikdesigns für Verpackungen und digitale Inhalte mit Adobe Photoshop.",
-  "section_title_skills": "[ Technische Werkzeugkiste ]",
-  "skills_cat1_title": "Programmiersprachen",
-  "skills_cat2_title": "Frameworks & Plattformen",
-  "skills_cat3_title": "Tools & Betriebssysteme",
-  "skills_cat4_title": "Netzwerk & Infrastruktur",
-  "footer_email": "[ E-Mail ]",
-  "footer_clearance": "SICHERHEITSFREIGABE: 01"
+  "nav": {
+    "about": "// ÜBER MICH",
+    "skills": "// FÄHIGKEITEN",
+    "experience": "// WERDEGANG",
+    "projects": "// PROJEKTE",
+    "contact": "// KONTAKT"
+  },
+  "hero": {
+    "scroll": "SCROLLEN ZUM ENTDECKEN"
+  },
+  "titles": {
+    "about": "[ ÜBER MICH ]",
+    "skills": "[ TECHNISCHE WERKZEUGE ]",
+    "experience": "[ BERUFLICHER WERDEGANG ]",
+    "projects": "[ MEINE PROJEKTE ]",
+    "contact": "[ KONTAKT AUFNEHMEN ]"
+  },
+  "about": "Softwareentwickler mit Fokus auf mobile Anwendungen (Flutter) und Web. Begeistert von der Lösung technischer Herausforderungen und dem Erlernen neuer Technologien, um effiziente und benutzerfreundliche Produkte zu entwickeln.",
+  "contact": "Ich bin derzeit offen für neue Möglichkeiten. Zögern Sie nicht, mich zu kontaktieren.",
+  "typed": [
+    "Mobile App Entwickler (Flutter)",
+    "Webentwickler & SEO-Spezialist",
+    "Kreativer Problemlöser"
+  ],
+  "skills": [
+    {
+      "category": "Programmiersprachen",
+      "list": [
+        { "name": "Python", "level": 80 },
+        { "name": "Dart", "level": 90 },
+        { "name": "Java", "level": 50 },
+        { "name": "SQL", "level": 60 }
+      ]
+    },
+    {
+      "category": "Frameworks & Plattformen",
+      "list": [
+        { "name": "Flutter", "level": 90 },
+        { "name": "Django", "level": 50 },
+        { "name": "WordPress", "level": 60 }
+      ]
+    },
+    {
+      "category": "Tools & Betriebssysteme",
+      "list": [
+        { "name": "Git & Versionskontrolle", "level": 85 },
+        { "name": "Linux", "level": 80 },
+        { "name": "Adobe Photoshop", "level": 70 },
+        { "name": "SEO-Tools (z.B. Ahrefs)", "level": 75 }
+      ]
+    },
+    {
+      "category": "Netzwerk & Infrastruktur",
+      "list": [
+        { "name": "Netzwerk+ Konzepte", "level": 75 },
+        { "name": "Virtuelle Maschinen", "level": 70 },
+        { "name": "Hardware-Montage", "level": 65 }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Webentwickler & SEO-Spezialist",
+      "location": "Abyaran Poyan Gostar Co. (2025 - Heute)",
+      "details": [
+        "Durchführung vollständiger SEO-Analysen und -Implementierungen für die Hauptseite des Unternehmens, abyaran.com.",
+        "Entwicklung neuer Funktionen und Pflege der Webpräsenz des Unternehmens."
+      ]
+    },
+    {
+      "title": "B.Sc. Informatik",
+      "location": "Islamische Azad-Universität Täbris (2019 - 2025)",
+      "details": []
+    },
+    {
+      "title": "WordPress-Entwickler & Admin",
+      "location": "Ario Barzan Fara Gostar Co.",
+      "details": [
+        "Vollständige Entwicklung der Unternehmenswebsite (abarzan.com) mit WordPress.",
+        "Verantwortlich für Content-Management, Plugin-Updates und Website-Wartung."
+      ]
+    },
+    {
+      "title": "Praktikant im technischen Support",
+      "location": "Polynar Co. (2023)",
+      "details": [
+        "Erlernen der Prozesse eines professionellen Netzwerk- und Support-Teams.",
+        "Computer-Montage, Software-Installation und System-Fehlerbehebung."
+      ]
+    },
+    {
+      "title": "Praktikant im Grafikdesign",
+      "location": "Pazineh Studio (2018)",
+      "details": [
+        "Erstellung von Grafikdesigns für Verpackungen und digitale Inhalte mit Adobe Photoshop."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Wortyar",
+      "platform": "Flutter-App",
+      "description": "Ein herausforderndes Wortratespiel für die persische Sprache, das den Wortschatz und das logische Denken erweitert.",
+      "link": "https://myket.ir/app/com.sakar.wortyar"
+    },
+    {
+      "name": "Abarzan.com",
+      "platform": "WordPress-Webseite",
+      "description": "Vollständige Entwicklung der Unternehmenswebsite für Ario Barzan Fara Gostar Co., einschließlich Content-Management und laufender Wartung.",
+      "link": "http://abarzan.com"
+    }
+  ]
 }
