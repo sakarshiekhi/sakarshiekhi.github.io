@@ -1,31 +1,114 @@
 {
-  "loader_text": "Establishing Secure Connection...",
-  "hud_status_label": "SYSTEM STATUS",
-  "hero_name": "Sakar Sheikhi",
-  "hero_summary": "Software developer focusing on mobile applications (Flutter) and web. Passionate about solving technical challenges and learning new technologies to build efficient and user-friendly products.",
-  "typed_title_1": "Mobile App Developer (Flutter)",
-  "typed_title_2": "Familiar with Network and Linux Concepts",
-  "typed_title_3": "Creative Problem Solving",
-  "section_title_experience": "[ Professional Trajectory ]",
-  "exp1_title": "Bachelor of Computer Science",
-  "exp1_location": "Islamic Azad University of Tabriz (2020 - 2025)",
-  "exp2_title": "WordPress Developer & Website Administrator",
-  "exp2_location": "Ario Barzan Fara Gostar Co.",
-  "exp2_desc1": "Full development of the company website (abarzan.com) using WordPress within two weeks.",
-  "exp2_desc2": "Responsible for content management, plugin updates, and site maintenance.",
-  "exp3_title": "Technical Support Intern (Help Desk)",
-  "exp3_location": "Polynar Co. (2023)",
-  "exp3_desc1": "Learned the processes of a professional network and support team.",
-  "exp3_desc2": "Assembled computers, installed software, and performed system troubleshooting.",
-  "exp3_desc3": "Familiarization with various network cables and providing technical support to users.",
-  "exp4_title": "Graphic Design Intern",
-  "exp4_location": "Pazineh Studio (2018)",
-  "exp4_desc1": "Created graphic designs for packaging and digital content using Adobe Photoshop.",
-  "section_title_skills": "[ Technical Toolbox ]",
-  "skills_cat1_title": "Programming Languages",
-  "skills_cat2_title": "Frameworks & Platforms",
-  "skills_cat3_title": "Tools & Operating Systems",
-  "skills_cat4_title": "Networking & Infrastructure",
-  "footer_email": "[ Email ]",
-  "footer_clearance": "SECURITY CLEARANCE LEVEL: 01"
+  "nav": {
+    "about": "// ABOUT",
+    "skills": "// SKILLS",
+    "experience": "// EXPERIENCE",
+    "projects": "// PROJECTS",
+    "contact": "// CONTACT"
+  },
+  "hero": {
+    "scroll": "SCROLL TO EXPLORE"
+  },
+  "titles": {
+    "about": "[ ABOUT ME ]",
+    "skills": "[ TECHNICAL TOOLBOX ]",
+    "experience": "[ PROFESSIONAL TRAJECTORY ]",
+    "projects": "[ MY PROJECTS ]",
+    "contact": "[ GET IN TOUCH ]"
+  },
+  "about": "Software developer focusing on mobile applications (Flutter) and web. Passionate about solving technical challenges and learning new technologies to build efficient and user-friendly products.",
+  "contact": "I'm currently open to new opportunities. Feel free to reach out.",
+  "typed": [
+    "Mobile App Developer (Flutter)",
+    "Web Developer & SEO Specialist",
+    "Creative Problem Solver"
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "list": [
+        { "name": "Python", "level": 80 },
+        { "name": "Dart", "level": 90 },
+        { "name": "Java", "level": 50 },
+        { "name": "SQL", "level": 60 }
+      ]
+    },
+    {
+      "category": "Frameworks & Platforms",
+      "list": [
+        { "name": "Flutter", "level": 90 },
+        { "name": "Django", "level": 50 },
+        { "name": "WordPress", "level": 60 }
+      ]
+    },
+    {
+      "category": "Tools & Operating Systems",
+      "list": [
+        { "name": "Git & Version Control", "level": 85 },
+        { "name": "Linux", "level": 80 },
+        { "name": "Adobe Photoshop", "level": 70 },
+        { "name": "SEO Tools (e.g. Ahrefs)", "level": 75 }
+      ]
+    },
+    {
+      "category": "Networking & Infrastructure",
+      "list": [
+        { "name": "Network+ Concepts", "level": 75 },
+        { "name": "Virtual Machines", "level": 70 },
+        { "name": "Hardware Assembly", "level": 65 }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Web Developer & SEO Specialist",
+      "location": "Abyaran Poyan Gostar Co. (2025 - Present)",
+      "details": [
+        "Performing full SEO analysis and implementation for the company's main site, abyaran.com.",
+        "Developing new features and maintaining the company's web presence."
+      ]
+    },
+    {
+      "title": "B.Sc. Computer Science",
+      "location": "Islamic Azad University of Tabriz (2019 - 2025)",
+      "details": []
+    },
+    {
+      "title": "WordPress Developer & Admin",
+      "location": "Ario Barzan Fara Gostar Co.",
+      "details": [
+        "Full development of the company website (abarzan.com) using WordPress.",
+        "Responsible for content management, plugin updates, and site maintenance."
+      ]
+    },
+    {
+      "title": "IT Support Intern (Help Desk)",
+      "location": "Polynar Co. (2023)",
+      "details": [
+        "Learned the processes of a professional network and support team.",
+        "Assembled computers, installed software, and performed system troubleshooting."
+      ]
+    },
+    {
+      "title": "Graphic Design Intern",
+      "location": "Pazineh Studio (2018)",
+      "details": [
+        "Created graphic designs for packaging and digital content using Adobe Photoshop."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Wortyar",
+      "platform": "Flutter App",
+      "description": "A challenging word-guessing game for the Persian language, designed to expand vocabulary and logical thinking.",
+      "link": "https://myket.ir/app/com.sakar.wortyar"
+    },
+    {
+      "name": "Abarzan.com",
+      "platform": "WordPress Website",
+      "description": "Full development of the Ario Barzan Fara Gostar Co. corporate website, including content management and ongoing maintenance.",
+      "link": "http://abarzan.com"
+    }
+  ]
 }
